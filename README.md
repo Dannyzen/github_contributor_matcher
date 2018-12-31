@@ -1,7 +1,7 @@
 GITHUBCONTRIBUTORMATCH
 =====
 
-Imagine you work at a company that has _a lot_ of open source committers in many many projects. And now imagine you're responsible for the happys of some users that may use some of those projects. At times you might want to answer the question: "HEY! I work at <org>! Maybe there's someone at <org> who is working on <project>/<repository> that I can talk to because user is happy!"
+Imagine you work at a company that has _a lot_ of open source committers in many many projects. And now imagine you're responsible for the happys of some users that may use some of those projects. At times you might want to answer the question: "HEY! I work at `<org>`! Maybe there's someone at `<org>` who is working on `<project>/<repository>` that I can talk to about `<repository>`!"
 
 This script attempts to answer that question.
 
