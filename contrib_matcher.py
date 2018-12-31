@@ -1,12 +1,7 @@
+#!/usr/bin/env python
 from github3 import login, exceptions
 from sys import argv
 from os import getenv
-
-# This is totally an anti-pattern but I'm not sure I care enough to find a more elegant solution. This is due to the underlying library's handling of user.name & non-utf-8 char encoding.
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 
 
 def loadGithubToken():
