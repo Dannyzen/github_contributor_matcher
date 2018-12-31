@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from github3 import login, exceptions
 from sys import argv
 from os import getenv
