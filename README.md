@@ -5,10 +5,31 @@ Imagine you work at a company that has _a lot_ of open source committers in many
 
 This script attempts to answer that question.
 
+Installs
+=====
+
+This is a shtty python script, as such, it follows the common patterns associated with running shtty python:
+
+```git clone https://github.com/Dannyzen/githubcontributormatch.git
+
+cd githubcontribitormatch
+
+virtualenv .
+
+pip install -r requirements.txt
+
+```
+
+Usings
+=====
+
 usage: `python contrib_matcher.py <organization> <project> <repository>`
 
 
 example: `python contrib_matcher.py openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
+
+
+
 
 
 Thanx
