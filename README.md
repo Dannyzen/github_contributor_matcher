@@ -8,7 +8,7 @@ This script attempts to answer that question.
 Installs
 =====
 
-This is a shtty python script, as such, it follows the common patterns associated with running shtty python:
+This is a poorly written python script, as such, it follows the common patterns associated with running poorly written python:
 
 ```git clone https://github.com/Dannyzen/githubcontributormatch.git
 
