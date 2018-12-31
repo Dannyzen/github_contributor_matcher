@@ -10,7 +10,8 @@ Installs
 
 This is a poorly written python script, as such, it follows the common patterns associated with running poorly written python:
 
-```git clone https://github.com/Dannyzen/githubcontributormatch.git
+```
+git clone https://github.com/Dannyzen/githubcontributormatch.git
 
 cd githubcontribitormatch
 
