@@ -13,7 +13,7 @@ def loadGithubToken():
             from yaml import load, YAMLError
             yaml_blob = load(file('./config.yaml','r'))
             github_token = yaml_blob['token']
-        except IOError:
+        except (IOError, NameError):
             print("Attempted to load a github token. Tried to use the environmental variable 'GITHUB_TOKEN', then tried to load a config.yaml. Neither were found. Read the README.")
             raise
     global github
