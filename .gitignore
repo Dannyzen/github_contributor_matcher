@@ -3,6 +3,8 @@ bin/
 include/
 lib/
 dist/
+build/
+testing/
 pip-selfcheck.json
 share/
 *.pyc
