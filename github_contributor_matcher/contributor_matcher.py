@@ -1,21 +1,14 @@
 #!/usr/bin/env python3
+import os
 from github3 import login, exceptions
 from sys import argv
-from os import getenv
 
 
 def loadGithubToken():
-    # Pull 'key' in from env var "GITHUB_TOKEN", else, maybe there's a config.yaml with a 'key'
-    if getenv("GITHUB_TOKEN") is not None:
-        github_token = getenv("GITHUB_TOKEN")
-    else:
-        try:
-            from yaml import load, YAMLError
-            yaml_blob = load(file('./config.yaml','r'))
-            github_token = yaml_blob['token']
-        except (IOError, NameError):
-            print("Attempted to load a github token. Tried to use the environmental variable 'GITHUB_TOKEN', then tried to load a config.yaml. Neither were found. Read the README.")
-            raise
+    """Sets global github_token from env var 'GITUB_TOKEN'."""
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token is None:
+        raise TypeError("It looks as your environment variable for 'GITHUB_TOKEN' is not set. Check oout the README for how to set this up.")
     global github
     github = login(token=github_token)
 
