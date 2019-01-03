@@ -5,10 +5,42 @@ Imagine you work at a company that has _a lot_ of open source committers in many
 
 This script attempts to answer that question.
 
-Usings
+Setup
 =====
 
-usage: `contributor_matcher <organization> <project> <repository>`
+Requirements:
+
+* Python 3
+* Pip
+* A github account with a personal access token exported to the `GITHUB_TOKEN` environmental variable
+* A sense of wonder and curiosity
+
+
+Want this to work? Follow the directions below. Doesn't work? File an issue. 
+
+
+Installation:
+---
+
+`pip install github_contributor_matcher`
+
+
+Authorization:
+--- 
+
+Generate a personal access token via Github's Settings - Developer Settings - [Personal Access Token](https://github.com/settings/tokens) page. Grant the token "repo" and "user". Export the token as an environmental variable "GITHUB_TOKEN":
+
+
+`export GITHUB_TOKEN=your_new_token`
+
+
+Confirm the token is set by echoing its value when running `echo $GITHUB_TOKEN`.
+
+
+Usage:
+---
+
+`contributor_matcher <organization> <project> <repository>`
 
 
 example: `contributor_matcher openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
