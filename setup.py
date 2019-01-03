@@ -19,8 +19,7 @@ setuptools.setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent"],
     install_requires=[
-        "github3.py==1.2.0",
-        "pyyaml==3.13"],
+        "github3.py==1.2.0"],
     entry_points={
         "console_scripts":[
             "github_contributor_matcher=github_contributor_matcher.contributor_matcher:main"]
