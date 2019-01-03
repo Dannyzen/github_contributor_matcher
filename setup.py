@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Github_Contributor_Matcher",
-    version="0.1.1",
+    version="0.1.2",
     author="Dannyzen",
     author_email="danny.rosen@gmail.com",
     description="Identify contributors of a repo, given their organization",
