@@ -9,6 +9,7 @@ Setup
 =====
 
 Requirements:
+---
 
 * Python 3
 * Pip
@@ -19,7 +20,7 @@ Requirements:
 Want this to work? Follow the directions below. Doesn't work? File an issue. 
 
 
-Installation:
+Install
 ---
 
 `pip install github_contributor_matcher`
@@ -37,7 +38,7 @@ Generate a personal access token via Github's Settings - Developer Settings - [P
 Confirm the token is set by echoing its value when running `echo $GITHUB_TOKEN`.
 
 
-Usage:
+Usage
 ---
 
 `contributor_matcher <organization> <project> <repository>`
@@ -46,7 +47,7 @@ Usage:
 example: `contributor_matcher openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
 
 Contributors
-====
+=====
 
 @dannyzen
 @maxdotdotg
@@ -55,3 +56,8 @@ Thanks
 =====
 
 @sigmavirus24 & the rest of the contributors on the [github3.py](https://github.com/sigmavirus24/github3.py/graphs/contributors) project
+
+
+License
+=====
+[Apache License, Version 2.0](LICENSE.md)
