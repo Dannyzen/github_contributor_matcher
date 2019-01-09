@@ -41,7 +41,7 @@ Confirm the token is set by echoing its value when running `echo $GITHUB_TOKEN`.
 Usage
 ---
 
-`contributor_matcher <organization> <project> <repository>`
+`github_contributor_matcher <organization> <project> <repository>`
 
 
 example: `contributor_matcher openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
