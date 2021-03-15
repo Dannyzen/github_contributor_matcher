@@ -44,7 +44,7 @@ Usage
 `github_contributor_matcher <organization> <project> <repository>`
 
 
-example: `contributor_matcher openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
+example: `github_contributor_matcher openshift kubernetes kubernetes` would print all users in the kubernetes/kubernetes project that are associated to the "openshift" organization in github. 
 
 Contributors
 =====
