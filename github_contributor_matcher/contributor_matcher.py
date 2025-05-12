@@ -16,6 +16,9 @@ def getOrgId(org_str = argv[1]):
     """ Given an org that I want to search (first argument), get the org ID"""
     try:
         org_obj = github.organization(org_str)
+        # Only print the org ID if the organization is found
+        if org_obj:
+            print("{org_str} Org ID: {org_id}".format(org_id=org_obj.id, org_str=org_str))
     except exceptions.NotFoundError:
         print("Unable to find find the organization {organization} in Github, try another organization name.".format(organization=org_str))
         raise
@@ -32,6 +35,7 @@ def matchCompanyWithRepo(owner_org = argv[2], repo_name = argv[3]):
     for user_contributor in repo.contributors():
         contributor_orgs = github.organizations_with(user_contributor.login)
         for contributors_org in contributor_orgs:
+            print("Org ID: {org_id}".format(org_id=contributors_org.id))
             if contributors_org.id == org_id:
                 user = github.user(user_contributor)
                 print("User: {login}, Name: {name}, Email: {email}, Company: {company}".format(login=user.login, name=user.name, email=user.email, company=user.company))
